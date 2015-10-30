@@ -1,0 +1,17 @@
+<ion-view title="세차내역" hide-back-button="true">
+    <ion-content>
+    <!-- ToDo: 상단영역 확보하기 -->
+		<div style="display:block; height: 50px;"></div>
+        <ion-tabs>
+            <!-- Home Tab -->
+            <ion-tab title="예약 내역" icon="icon ion-calendar" href="#/app/carwash/reservations">
+                <ion-nav-view name="historyContent"></ion-nav-view>
+            </ion-tab>
+            <!-- Home Tab -->
+            <ion-tab title="예약 완료" icon="icon ion-checkmark" href="#/app/carwash/complete">
+                <ion-nav-view name="historyContent"></ion-nav-view>
+            </ion-tab>
+        </ion-tabs>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,60 @@
+<ion-view title="Car Wash - Main Page" hide-back-button="true">
+    <ion-content>
+
+    	<div>
+    		<!-- 위치정보 -->
+    		<!-- 날씨 -->
+    		<div>
+    			세차지수
+    			<span>{{washPoint[0].point}}</span>
+    			<span>{{washPoint[0].msg}}</span>
+    		</div>
+
+			<div>
+				<span>내일 세차지수</span>
+				<span>{{washPoint[1].point}}</span>
+				<span>모레 세차지수</span>
+				<span>{{washPoint[2].point}}</span>
+			</div>
+
+    		<button type="button" ng-click="doReservation()">세차예약</button>
+    	</div>
+
+    	<!-- 세차내역 -->
+    	<div>
+    		<ion-list>
+    			<ion-item>
+    				<div>세차내역</div>
+    			</ion-item>
+    		</ion-list>
+    	</div>
+
+    	<!-- 이벤트 -->
+    	<div>
+    		<ion-list>
+    			<ion-item>
+    				<div>이벤트 배너 1</div>
+    			</ion-item>
+    		</ion-list>
+    	</div>
+
+    	<!-- 공지사항 -->
+    	<div>
+    		<H5>공지사항</H5>
+    		<ion-list>
+    			<ion-item href="{{notice.link}}" ng-repeat="notice in noticeList">
+    				<span>{{notice.title}}</span>
+    			</ion-item>
+    		</ion-list>
+    	</div>
+
+    	<ion-footer-bar>
+    		<div class="buttons">
+    			<a href="#/app/customer/rules">이용약관</a>
+    			<a href="#/app/customer/privacy">개인정보 취급방침</a>
+    			<a href="#/app/customer">고객센터</a>
+  			</div>
+  			<div>LG U+</div>
+    	</ion-footer-bar>
+    </ion-content>
+</ion-view>
